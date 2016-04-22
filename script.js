@@ -1,11 +1,3 @@
-function randomColor() {
-    var letters = '0123456789ABCDEF'.split('');
-    var hexKeyColor = '#';
-    for (var i = 0; i < 6; i++ ) {
-        hexKeyColor += letters[Math.floor(Math.random() * 16)];
-    }
-    return hexKeyColor;
-}
 function colorGradient2(i){
   return('#'+i+'F'+'9'+'3'+'A'+'B')
 }
