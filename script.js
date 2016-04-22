@@ -1,11 +1,3 @@
-function randomColor() {
-    var letters = '0123456789ABCDEF'.split('');
-    var hexKeyColor = '#';
-    for (var i = 0; i < 6; i++ ) {
-        hexKeyColor += letters[Math.floor(Math.random() * 16)];
-    }
-    return hexKeyColor;
-}
 window.onload=function()
     {
         var i=0;
@@ -19,7 +11,7 @@ window.onload=function()
                 {
                     var div = document.createElement('div');
                     document.body.appendChild(div);
-                    div.style.backgroundColor= randomColor();
+                    div.style.backgroundColor= 'red';
                     div.style.width = '11.1%';
                     div.style.paddingBottom = '11.1%';
                     div.style.cssFloat = 'left';
@@ -28,7 +20,7 @@ window.onload=function()
                 {
                   var div = document.createElement('div');
                   document.body.appendChild(div);
-                  div.style.backgroundColor= randomColor();
+                  div.style.backgroundColor= 'black';
                   div.style.width = '11.1%';
                   div.style.paddingBottom = '11.1%';
                   div.style.cssFloat = 'left';
