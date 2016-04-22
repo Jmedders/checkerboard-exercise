@@ -6,18 +6,7 @@ function randomColor() {
     }
     return hexKeyColor;
 }
-var flashy;
-function flash(){
-   flashy = setInterval(checkers, 2000);
-}
-// function colorGradient2(i){
-//   return('#'+i+'F'+'9'+'3'+'A'+'B')
-// }
-// function colorGradient(i){
-//     return('#'+i+'F'+i+'F'+i+'F');
-// }
-
-function checkers()
+window.onload=function()
     {
         var i=0;
         var j=0;
@@ -47,5 +36,3 @@ function checkers()
             }
         }
     }
-document.body.innerHTML = '';
-window.onload= flash()
