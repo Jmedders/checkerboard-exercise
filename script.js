@@ -6,18 +6,15 @@ function randomColor() {
     }
     return hexKeyColor;
 }
-var flashy;
-function flash(){
-   flashy = setInterval(checkers, 2000);
+function colorGradient2(i){
+  return('#'+i+'F'+'9'+'3'+'A'+'B')
 }
-// function colorGradient2(i){
-//   return('#'+i+'F'+'9'+'3'+'A'+'B')
-// }
-// function colorGradient(i){
-//     return('#'+i+'F'+i+'F'+i+'F');
-// }
+function colorGradient(i){
+    return('#'+i+'F'+i+'F'+i+'F');
+}
 
-function checkers()
+
+window.onload=function()
     {
         var i=0;
         var j=0;
@@ -30,7 +27,7 @@ function checkers()
                 {
                     var div = document.createElement('div');
                     document.body.appendChild(div);
-                    div.style.backgroundColor= randomColor();
+                    div.style.backgroundColor= colorGradient(j);
                     div.style.width = '11.1%';
                     div.style.paddingBottom = '11.1%';
                     div.style.cssFloat = 'left';
@@ -39,7 +36,7 @@ function checkers()
                 {
                   var div = document.createElement('div');
                   document.body.appendChild(div);
-                  div.style.backgroundColor= randomColor();
+                  div.style.backgroundColor= colorGradient2(j);
                   div.style.width = '11.1%';
                   div.style.paddingBottom = '11.1%';
                   div.style.cssFloat = 'left';
@@ -47,5 +44,3 @@ function checkers()
             }
         }
     }
-document.body.innerHTML = '';
-window.onload= flash()
